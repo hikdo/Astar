@@ -90,6 +90,7 @@ GraphSearch.prototype.setOption = function(opt) {
 };
 GraphSearch.prototype.initialize = function() {
     this.grid = [];
+    this.nodes = [];
     var self = this,
         $graph = this.$graph;
 
