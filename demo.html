@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>demo</title>
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="demo.css" />
+	</head>
+<body>
+
+	<div id="content">
+		<h2>demo</h2>
+	    <div id="controls" class='clear'>
+	    		<label for="selectGridSize">行x列: </label>
+	    		<select id="selectGridSize" name="selectGridSize">
+	    			<option value="30">30x30</option>
+	    			<option value="40" selected="selected">40x40</option>
+	    			<option value="50">50x50</option>
+	    			<option value="100">100x100</option>
+	    		</select>
+	    		<button id="setStartBtn">设置起点</button>
+	    		<button id="setEndBtn">设置终点</button>
+	    		<button id="setWallBtn">设置(清除)障碍</button>
+	    		<button id="runBtn">开始寻路</button>
+	    		<span id="message"></span>
+	    </div>
+
+	    <div id="main">
+	    	<div id="search_grid">Loading grid...</div>
+	    </div>
+
+	</div>
+
+	<script type='text/javascript' src='jquery-1.7.1.min.js'></script>
+	<script type='text/javascript' src='astar.js'></script>
+	<script type='text/javascript' src='demo.js'></script>
+</body>
+</html>
